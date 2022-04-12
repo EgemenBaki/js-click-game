@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM JavaScript</title>
+    </head>
+    <style>
+        h1 {
+            color: red;
+        }
+        .game {
+            margin: auto;
+            height: 800px;
+            width: 1500px;
+            border: 1px solid black;
+        }
+        .scoreh1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .bestScore {
+            margin-left: 50px;
+        }
+        .enemy {
+            border-radius: 50%;
+            cursor: pointer;
+            line-height: 30px;
+            text-align: center;
+            color: white;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            height: 45px;
+            width: 45px;
+            background-color: blue;
+        }
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+        .restart-button {
+            height: 37px;
+            align-self: center;
+            width: 100px;
+            color: red;
+            border: 1px solid red;
+            border-radius: 5px;
+            background-color: transparent;
+            margin-left: 71px;
+            cursor: pointer;
+        }
+        .d-none {
+            display: none;
+        }
+        .d-block {
+            display: block;
+        }
+    </style>
+    <body>
+        <div class="row score-row">
+            <h1 class="totalScore scoreh1">Total Score:</h1>
+            <h1 class="bestScore scoreh1"></h1>
+        </div>
+        <div class="row timer-row">
+            <h1 class=timer>Time Left:</h1>
+            <button onclick="btnClick()" class="restart-button d-none">Restart</button>
+        </div>
+        <div class="game">
+            <div class="box"></div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
